@@ -37,3 +37,7 @@ Each dataset includes features like:
 - **Jupyter Notebook** (for training and evaluation)
 - **Pandas, NumPy, Matplotlib, Seaborn**
 
+## 🤝 Contributors
+
+- [@Ishwar-C-M](https://github.com/IshwarCM)  
+- [@Rugved-Sangulkar](https://github.com/Rugved-Sangulkar)
