@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.heading{
+    padding: 0.5rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Light background color */
+    text-align: center;
+    padding: 10px 0; /* Padding for vertical spacing */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+}
+
+.copy p {
+    margin: 0; /* Remove default margins */
+    font-size: 14px; /* Adjust font size */
+    color: #333; /* Text color */
+}
+
+
+.star {
+  transform-style: preserve-3d;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  color: red;
+}
+
+.star:before {
+  position: absolute;
+  content: "✦";
+  color: inherit;
+  inset: 0;
+  text-shadow: 0 0 0.8em #fff5;
+}
+
+.cd__main {
+  margin: 0;
+  min-height: 90vh;
+  font-family: "Montserrat", sans-serif;
+  color: #F9F6EF;
+  background-image: radial-gradient(circle at 50% 50%, #2f3040, #1f2020) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .container{
+    height: 75%;
+    width: 75%;
+} */
+
+
+.container {
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 50px auto; /* Center the content on the page */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 15px; /* Rounded corners for aesthetic appeal */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    color: #f0f0f0; /* Light text color to contrast with the dark background */
+    text-align: center; /* Center-align all content */
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
+}
+
+.container h2 {
+    font-size: 2rem; /* Slightly larger and bold heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #ffffff; /* Pure white for heading text */
+}
+
+.container p {
+    font-size: 1.1rem; /* Comfortable reading size */
+    line-height: 1.8; /* Improve readability */
+    margin-bottom: 15px; /* Add spacing between paragraphs */
+}
+
+.container .links {
+    margin-top: 30px; /* Space above the links */
+}
+
+.container .links a {
+    display: inline-block;
+    margin: 10px 15px; /* Space between links */
+    padding: 10px 20px; /* Padding inside links for clickability */
+    font-size: 1.1rem; /* Link text size */
+    color: #1f2020; /* Darker text color for contrast */
+    background-color: #f8c91e; /* Bright and modern button color */
+    border-radius: 5px; /* Rounded button edges */
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    font-weight: bold; /* Make links stand out */
+}
+
+.container .links a:hover {
+    background-color: #eab007; /* Darker yellow on hover */
+    color: #ffffff; /* White text for contrast */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Shadow effect on hover */
+}

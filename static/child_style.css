@@ -1,0 +1,183 @@
+/* Importing Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    align-items: center;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+main{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    width: 100%;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.heading{
+    padding: 0.5rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.home{
+    display: inline-block;
+    position:relative;
+    left: 50px;
+    bottom: 50px;
+}
+
+
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #007bff; /* Changes the color of the radio button */
+}
+
+.aqscore label,input{
+    display: inline-block;
+    padding: 3px;
+}
+
+.foot {
+    width: 100%;
+    padding: 6px;
+    text-align: center;
+    /* padding: 10px 0; Padding for vertical spacing */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+}
+
+.copy p {
+    margin: 0; /* Remove default margins */
+    font-size: 14px; /* Adjust font size */
+    color: #333; /* Text color */
+}
+
+form .button {
+    height: 45px;
+    margin: 35px 0;
+    display: flex;
+    gap: 10px;
+}
+
+form .button input{
+    margin-bottom: 3px;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+form .button input:hover {
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+form div{
+    margin: 3px;
+}
+
+
+legend{
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.same{
+    display: flex;
+    padding: 7px;
+
+}
+
+.aqscore{
+    display: flex;
+    padding: 7px;
+}
+
+.same>label{
+    width: 60%;
+}
+
+.aqscore>label{
+    width: 60%;
+}
+
+.same>.rad{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.aqscore>.rad{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.rad label{
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+#relation,#ethn,#residence, #age{
+    margin-left: 20px;
+    width: 35%;
+    height: 28px;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#relation:focus, #ethn:focus, #residence:focus{
+    border-color: #4CAF50; /* Green border on focus */
+    outline: none; /* Remove the default outline */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Add subtle glow */
+}
+
+#result{
+    margin-left: 20px;
+    width: 35%;
+    height: 28px;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#result:focus, #age:focus{
+    border-color: #4CAF50; /* Green border on focus */
+    outline: none; /* Remove the default outline */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Add subtle glow */
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADS Detection Form for Adult</title>
+    <link rel="stylesheet" href="../static/adult_style.css">
+    <script src="https://kit.fontawesome.com/5298084490.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <h1>Autism Spectrum Disorder Detection</h1>
+        </div>
+            <a href="{{ url_for('home') }}"><i class="fa-solid fa-house fa-2xl home" style="color: #000000;"></i></a>
+       
+  
+            
+
+    </header>
+
+    <main>
+        <div class="container">
+            <form action="/adult_index" method="POST">
+
+                <legend>ASD Detection For Adult</legend>
+                <div class="gender same">
+                    <label>Gender </label>
+                    <div class="rad"><label for="male">Male </label>
+                        <input type="radio" name="gender" id="male" value="gender_m">
+                    </div>
+                    <div class="rad"><label for="female">Female </label>
+                        <input type="radio" name="gender" id="female" value="gender_f">
+                    </div>
+                </div>
+
+                <div class="jaund same">
+                    <label>The individual was having Jaundice at birth </label>
+                    <div class="rad"><label for="yes">Yes </label>
+                        <input type="radio" name="jaundise" id="yes" value="1">
+                    </div>
+                    <div class="rad"><label for="no">No </label>
+                        <input type="radio" name="jaundise" id="no" value="0">
+                    </div>
+                </div>
+
+                <div class="asd same">
+                    <label>Any Family member supspected with ASD </label>
+                    <div class="rad"><label for="aut_yes">Yes </label>
+                        <input type="radio" name="autism" id="aut_yes" value="autism_yes">
+                    </div>
+                    <div class="rad"><label for="aut_no">No </label>
+                        <input type="radio" name="autism" id="aut_no" value="autism_no">
+                    </div>
+                </div>
+
+                <div class="relation same">
+                    <label for="relation">Relation with the suspected individual </label>
+                    <select name="relation" id="relation" required>
+                        <option selected disabled>Relation</option>
+                        <option value="relation_Parent">Parent</option>
+                        <option value="relation_Relative">Relative</option>
+                        <option value="Not_Applicable">Not Applicable</option>
+                    </select>
+                </div>
+
+                <div class="result same">
+                    <label for="result">Has any prior ASD screening been done? If yes, provide the result or score
+                    </label>
+                    <input type="number" name="result" id="result" min="0" max="10" placeholder="score" required>
+                </div>
+
+                <div class="ethn same">
+                    <label for="ethn">Ethnicity </label>
+                    <select name="ethnicity" id="ethn" required>
+                        <option selected disabled>Ethnicity</option>
+                        <option value="ethnicity_Asian">Asian</option>
+                        <option value="ethnicity_Black">Black</option>
+                        <option value="ethnicity_Hispanic">Hispanic</option>
+                        <option value="ethnicity_Latino">Latino</option>
+                        <option value="ethnicity_Middle Eastern ">Middle Eastern</option>
+                        <option value="ethnicity_Pasifika">Pasifika</option>
+                        <option value="ethnicity_South Asian">South Asian</option>
+                        <option value="ethnicity_Turkish">Turkish</option>
+                        <option value="ethnicity_White-European">White-European</option>
+                        <option value="Others">Others</option>
+                    </select>
+
+                </div>
+
+                <div class="resident same">
+                    <label for="residence">Country of Residence </label>
+                    <select name="contry_of_res" id="residence" required>
+                        <option selected disabled>Country</option>
+                        <option value="contry_of_res_Afghanistan">Afghanistan</option>
+                        <option value="contry_of_res_AmericanSamoa">American Samoa</option>
+                        <option value="contry_of_res_Armenia">Armenia</option>
+                        <option value="contry_of_res_Aruba">Aruba</option>
+                        <option value="contry_of_res_Australia">Australia</option>
+                        <option value="contry_of_res_Austria">Austria</option>
+                        <option value="contry_of_res_Brazil">Brazil</option>
+                        <option value="contry_of_res_Burundi">Burundi</option>
+                        <option value="contry_of_res_Canada">Canada</option>
+                        <option value="contry_of_res_Chile">Chile</option>
+                        <option value="contry_of_res_China">China</option>
+                        <option value="contry_of_res_Cyprus">Cyprus</option>
+                        <option value="contry_of_res_Ecuador">Ecuador</option>
+                        <option value="contry_of_res_Egypt">Egypt</option>
+                        <option value="contry_of_res_Ethiopia">Ethiopia</option>
+                        <option value="contry_of_res_Finland">Finland</option>
+                        <option value="contry_of_res_France">France</option>
+                        <option value="contry_of_res_Germany">Germany</option>
+                        <option value="contry_of_res_Iceland">Iceland</option>
+                        <option value="contry_of_res_India">India</option>
+                        <option value="contry_of_res_Iran">Iran</option>
+                        <option value="contry_of_res_Ireland">Ireland</option>
+                        <option value="contry_of_res_Italy">Italy</option>
+                        <option value="contry_of_res_Jordan">Jordan</option>
+                        <option value="contry_of_res_Kazakhstan">Kazakhstan</option>
+                        <option value="contry_of_res_Malaysia">Malaysia</option>
+                        <option value="contry_of_res_Mexico">Mexico</option>
+                        <option value="contry_of_res_Nepal">Nepal</option>
+                        <option value="contry_of_res_Netherlands">Netherlands</option>
+                        <option value="contry_of_res_New Zealand">New Zealand</option>
+                        <option value="contry_of_res_Pakistan">Pakistan</option>
+                        <option value="contry_of_res_Philippines">Philippines</option>
+                        <option value="contry_of_res_Portugal">Portugal</option>
+                        <option value="contry_of_res_Russia">Russia</option>
+                        <option value="contry_of_res_Saudi Arabia">Saudi Arabia</option>
+                        <option value="contry_of_res_Serbia">Serbia</option>
+                        <option value="contry_of_res_Sierra Leone">Sierra Leone</option>
+                        <option value="contry_of_res_South Africa">South Africa</option>
+                        <option value="contry_of_res_Spain">Spain</option>
+                        <option value="contry_of_res_Sri Lanka">Sri Lanka</option>
+                        <option value="contry_of_res_Sweden">Sweden</option>
+                        <option value="contry_of_res_Tonga">Tonga</option>
+                        <option value="contry_of_res_Ukraine">Ukraine</option>
+                        <option value="contry_of_res_United Arab Emirates">United Arab Emirates</option>
+                        <option value="contry_of_res_United Kingdom">United Kingdom</option>
+                        <option value="contry_of_res_United States">United States</option>
+                        <option value="contry_of_res_Uruguay">Uruguay</option>
+                        <option value="contry_of_res_Viet Nam">Viet Nam</option>
+                    </select>
+                </div>
+
+
+                <div class="aqscore">
+                    <label>Does the person speak very little and give unrelated answers to questions?</label>
+                    <div class="rad">
+                        <label for="a1_yes">Yes </label>
+                        <input type="radio" name="A1_Score" id="a1_yes" value="1">
+                    </div>
+                    <div class="rad"><label for="a1_no">No </label>
+                        <input type="radio" name="A1_Score" id="a1_no" value="0">
+                    </div>
+                </div>
+
+                <div class="aqscore">
+                    <label>Does the person not respond to their name or avoid eye contact?</label>
+                    <div class="rad"><label for="a2_yes">Yes </label>
+                        <input type="radio" name="A2_Score" id="a2_yes" value="1">
+                    </div>
+                    <div class="rad"><label for="a2_no">No </label>
+                        <input type="radio" name="A2_Score" id="a2_no" value="0">
+                    </div>
+                </div>
+
+                <div class="aqscore">
+                    <label>Does the person not engage in games of pretend with other children?</label>
+                    <div class="rad"><label for="a3_yes">Yes </label>
+                        <input type="radio" name="A3_Score" id="a3_yes" value="1">
+                    </div>
+                    <div class="rad"><label for="a3_no">No </label>
+                        <input type="radio" name="A3_Score" id="a3_no" value="0">
+                    </div>
+                </div>
+
+                <div class="aqscore">
+                    <label>Does the person struggle to understand other people’s feelings?</label>
+                    <div class="rad"><label for="a4_yes">Yes </label>
+                        <input type="radio" name="A4_Score" id="a4_yes" value="1">
+                    </div>
+                    <div class="rad"> <label for="a4_no">No </label>
+                        <input type="radio" name="A4_Score" id="a4_no" value="0">
+                    </div>
+                </div>
+
+                <div class="aqscore">
+                    <label>Is the person easily upset by small changes?</label>
+                    <div class="rad"><label for="a5_yes">Yes </label>
+                        <input type="radio" name="A5_Score" id="a5_yes" value="1">
+                    </div>
+                    <div class="rad"><label for="a5_no">No </label>
+                        <input type="radio" name="A5_Score" id="a5_no" value="0">
+                    </div>
+                </div>
+
+                <div class="aqscore">
+                    <label>Does the person have obsessive interests?</label>
+                    <div class="rad"><label for="a6_yes">Yes </label>
+                        <input type="radio" name="A6_Score" id="a6_yes" value="1">
+                    </div>
+                    <div class="rad"><label for="a6_no">No </label>
+                        <input type="radio" name="A6_Score" id="a6_no" value="0">
+                    </div>
+                </div>
+
+                <div class="aqscore">
+                    <label>Is the person over or under-sensitive to smells, tastes, or touch?</label>
+                    <div class="rad"><label for="a7_yes">Yes </label>
+                        <input type="radio" name="A7_Score" id="a7_yes" value="1">
+                    </div>
+                    <div class="rad"><label for="a7_no">No </label>
+                        <input type="radio" name="A7_Score" id="a7_no" value="0">
+                    </div>
+                </div>
+
+
+                <div class="aqscore">
+                    <label>Does the person struggle to socialize with other children?</label>
+                    <div class="rad"><label for="a8_yes">Yes </label>
+                        <input type="radio" name="A8_Score" id="a8_yes" value="1">
+                    </div>
+                    <div class="rad"><label for="a8_no">No </label>
+                        <input type="radio" name="A8_Score" id="a8_no" value="0">
+                    </div>
+                </div>
+
+                <div class="aqscore">
+                    <label>Does the person avoid physical contact?</label>
+                    <div class="rad"><label for="a9_yes">Yes </label>
+                        <input type="radio" name="A9_Score" id="a9_yes" value="1">
+                    </div>
+                    <div class="rad"><label for="a9_no">No </label>
+                        <input type="radio" name="A9_Score" id="a9_no" value="0">
+                    </div>
+                </div>
+
+                <div class="aqscore">
+                    <label>Does the person show little awareness of dangerous situations?</label>
+                    <div class="rad"><label for="a10_yes">Yes </label>
+                        <input type="radio" name="A10_Score" id="a10_yes" value="1">
+                    </div>
+                    <div class="rad"><label for="a10_no">No </label>
+                        <input type="radio" name="A10_Score" id="a10_no" value="0">
+                    </div>
+                </div>
+
+                <div class="button">
+                    <input type="submit" value="Predict">
+                    <input type="reset" value="Clear">
+                </div>
+
+                <div class="predict">
+                    <h2>Prediction : {{prediction}}</h2>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="foot">
+        <div class="copy">
+            <p>Autism Spectrum Disorder Detection &copy; 2025</p>
+        </div>
+    </footer>
+</body>
+
+</html>
