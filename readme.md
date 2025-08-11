@@ -41,4 +41,4 @@ Each dataset includes features like:
 
 - [@Ishwar-C-M](https://github.com/IshwarCM)  
 - [@Rugved-Sangulkar](https://github.com/Rugved-Sangulkar)
-- Krutika Kanchani
+- [@Krutika Kanchani](https://github.com/Krutikaa25)
