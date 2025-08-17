@@ -39,6 +39,7 @@ Each dataset includes features like:
 
 ## 🤝 Contributors
 
-- [@Ishwar-C-M](https://github.com/IshwarCM)  
-- [@Rugved-Sangulkar](https://github.com/Rugved-Sangulkar)
-- [@Krutika Kanchani](https://github.com/Krutikaa25)
+- [Ishwar-C-M](https://github.com/IshwarCM)  
+- [Rugved-Sangulkar](https://github.com/Rugved-Sangulkar)
+- [Krutika Kanchani](https://github.com/Krutikaa25)
+- [Chinmayee P S](https://github.com/chinmayeeee16)
